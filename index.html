@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17120f">
+  <meta name="description" content="Guide complet de Cookie Clicker, du premier cookie aux combos avancés.">
+  <title>Cookie Clicker — Le guide complet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+      <a class="brand" href="#" data-page="accueil"><span class="brand-cookie">🍪</span><span>COOKIE<span class="brand-accent">CLIKER</span><small>LE GUIDE COMPLET</small></span></a>
+      <div class="topbar-right">
+        <span class="status-dot"></span><span class="topbar-label">Guide débutant → avancé</span>
+      </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-intro">
+        <span class="eyebrow">PARCOURS D'APPRENTISSAGE</span>
+        <div class="progress-row"><span>Ta progression</span><strong id="progressText">0 %</strong></div>
+        <div class="progress-track"><span id="progressBar"></span></div>
+      </div>
+      <div class="nav-group">
+        <div class="nav-heading">POUR COMMENCER</div>
+        <button class="nav-link active" data-page="accueil"><span>⌂</span> Accueil</button>
+        <button class="nav-link" data-page="bases"><span>01</span> Les bases</button>
+        <button class="nav-link" data-page="cookies"><span>02</span> Cookies dorés</button>
+        <button class="nav-link" data-page="multiplicateurs"><span>03</span> Multiplicateurs</button>
+      </div>
+      <div class="nav-group">
+        <div class="nav-heading">LES MÉCANIQUES</div>
+        <button class="nav-link" data-page="sucre"><span>04</span> Sugar Lumps</button>
+        <button class="nav-link" data-page="grimoire"><span>05</span> Grimoire & FTHOF</button>
+        <button class="nav-link" data-page="dualcast"><span>06</span> Dualcast & Quadcast</button>
+        <button class="nav-link" data-page="pantheon"><span>07</span> Pantheon & Godzamok</button>
+        <button class="nav-link" data-page="dragon"><span>08</span> Krumblor & auras</button>
+        <button class="nav-link" data-page="grandmapocalypse"><span>09</span> Grandmapocalypse</button>
+        <button class="nav-link" data-page="garden"><span>10</span> Jardin</button>
+      </div>
+      <div class="nav-group">
+        <div class="nav-heading">LES COMBOS</div>
+        <button class="nav-link" data-page="bonus"><span>11</span> Bonus & préparation</button>
+        <button class="nav-link" data-page="combos"><span>12</span> Construire un combo</button>
+        <button class="nav-link" data-page="avance"><span>13</span> Techniques avancées</button>
+        <button class="nav-link" data-page="progression"><span>14</span> Ordre de progression</button>
+      </div>
+      <div class="nav-group">
+        <div class="nav-heading">AIDE-MÉMOIRE</div>
+        <button class="nav-link" data-page="glossaire"><span>≡</span> Glossaire</button>
+        <button class="nav-link" data-page="sources"><span>↗</span> Sources utiles</button>
+      </div>
+      <div class="sidebar-footer">Un guide communautaire non officiel.<br>Cookie Clicker appartient à ses créateurs.</div>
+    </aside>
+
+    <main class="main-content">
+      <div class="mobile-backdrop" id="backdrop"></div>
+      <div class="content-wrap">
+        <div class="content-tools">
+          <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Rechercher dans le guide…"><kbd>Ctrl K</kbd></label>
+          <button class="mark-button" id="markButton">✓ <span>Marquer comme lu</span></button>
+        </div>
+        <article id="pageContent" class="page-content" aria-live="polite"></article>
+        <footer class="page-footer">
+          <button class="previous-button" id="prevButton">← <span>Précédent</span></button>
+          <div class="page-indicator" id="pageIndicator">Accueil</div>
+          <button class="next-button" id="nextButton"><span>Suivant</span> →</button>
+        </footer>
+        <div class="copyright">COOKIE CLICKER GUIDE <span>•</span> Fait pour apprendre, pas pour speedrun dès la première minute.</div>
+      </div>
+    </main>
+  </div>
+  <div class="search-results" id="searchResults" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>
